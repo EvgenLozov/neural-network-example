@@ -1,5 +1,6 @@
 import org.apache.commons.math3.linear.MatrixUtils;
 import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.SparseRealMatrix;
 
 import java.util.Arrays;
 
@@ -10,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double [][] input = { {1, 0} };
-        double [][] weightOfHidden = { {0.45, 0.78}, {-0.12, 0.13}};
+        double [][] input = { {1, 0, 1} };
+        double [][] weightOfHidden = { {0.45, 0.78}, {-0.12, 0.13} , {0, 0}};
         double [][] weightOfOut = { {1.5}, {-2.3} };
 
 //      better weights
